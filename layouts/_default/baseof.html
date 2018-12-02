@@ -14,9 +14,12 @@
 
     <link rel="canonical" href="{{ .Permalink }}">
 
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Merriweather:300,700|Source+Code+Pro:400,700" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" integrity="sha256-oSrCnRYXvHG31SBifqP2PM1uje7SJUyX0nTwO2RJV54=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/merriweather.font.css" />
+    <link rel="stylesheet" href="css/sourcecode.font.css" />
+    <link rel="stylesheet" href="css/lato.font.css" />
+
+    <link rel="stylesheet" href="css/fontawesome-all.min.css" />
+    <link rel="stylesheet" href="css/normalize.min.css" />
 
     {{ if .Site.IsServer }}
       {{ $cssOpts := (dict "targetPath" "css/coder.css" "enableSourceMap" true ) }}
@@ -77,8 +80,6 @@
 
       {{ partial "footer.html" . }}
     </main>
-
-    {{ template "_internal/google_analytics.html" . }}
 
   </body>
 
